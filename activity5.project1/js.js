@@ -34,7 +34,9 @@ class Window {
 class Calculator extends Window {
     constructor(options = {}) {
         super();
-        //y mas cosas
+        this.display = document.createElement('input');
+        this.buttons = [];
+
 
     }
 }
