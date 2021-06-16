@@ -7,6 +7,10 @@
 
     <title>Activity 7: the audio tag + events</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <style>
       .controls div{
         float: left;
@@ -33,14 +37,15 @@
       <li>music2.mp3</li>
       <li>music3.mp3</li>
     </ol>
-    <audio>
+    <audio id="audio">
      <source src="" type="audio/mpeg">
      Your browser does not support the audio tag.
     </audio>
     <div class="controls">
-      <div class="play"><i class="fa fa-play"></i></div>
-      <div class="backward"><i class="fa fa-step-backward"></i></div>
-      <div class="fordward"><i class="fa fa-step-forward"></i></div>
+      <div class="play"><i class="fa fa-play" id="playPause"></i></div>
+      <div class="backward"><i class="fa fa-step-backward" id="previous"></i></div>
+      <div class="fordward"><i class="fa fa-step-forward" id="next"></i></div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
