@@ -1,0 +1,3 @@
+#main, ::after, ::before {
+    box-sizing: content-box;
+}
